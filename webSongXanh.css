@@ -1,13 +1,16 @@
-/* ul {
+ul {
   margin-top: 42px;
   margin-left: 200px;
 }
 ul li {
   list-style-type: none;
   display: inline;
-} */
+}
 
-h1 {
-  color: red;
-  font-style: italic;
+img:not(.logo img) {
+  width: 200px;
+}
+
+span:not(.logo span) {
+  margin-left: 75%;
 }
