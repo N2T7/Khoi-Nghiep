@@ -1,6 +1,7 @@
 ul {
   /* margin-top: 42px; */
-  margin-left: 300px;
+  /* align: center; */
+  padding-left: 50%;
 }
 ul li {
   list-style-type: none;
@@ -25,6 +26,12 @@ span:not(.logo) {
   background-color: orange;
 }
 
+.lienhe span {
+  margin-right: 0px;
+  border-left: 0px;
+  padding-left: 0px;
+}
+
 hr {
   border: 1px dashed black;
   border-radius: 5px;
@@ -32,4 +39,8 @@ hr {
 
 body {
   background-color: wheat;
+}
+
+.logo img {
+  border-radius: 50%;
 }
