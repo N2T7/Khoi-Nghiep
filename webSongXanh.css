@@ -1,10 +1,12 @@
 ul {
-  width: 700px;
-  margin: 20px auto 0;
+  width: 75%;
+  padding: 0;
+  margin: 20px auto 0px;
 }
 ul li {
   list-style-type: none;
   display: inline;
+  padding: 0 50px;
 }
 
 img:not(.logo img) {
@@ -12,7 +14,7 @@ img:not(.logo img) {
 }
 
 span:not(.logo) {
-  margin-right: 0em;
+  margin-left: auto;
 }
 
 .logo {
