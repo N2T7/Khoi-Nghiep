@@ -1,7 +1,6 @@
 ul {
-  /* margin-top: 42px; */
-  /* align: center; */
-  padding-left: 50%;
+  width: 700px;
+  margin: 20px auto 0;
 }
 ul li {
   list-style-type: none;
