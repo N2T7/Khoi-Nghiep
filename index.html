@@ -6,55 +6,75 @@
     <link rel="stylesheet" href="webSongXanh.css" />
     <title>Trang chủ</title>
     <style>
-      .hinh {
-        background-color: green;
+      marquee {
+        margin: 0 auto;
+        text-align: center;
       }
-      h1 {
-        background-color: blue;
-        color: white;
+      .hinh {
+        display: grid;
+        place-items: center;
+      }
+      .hop {
+        padding-top: 2px;
+        width: 20%;
+        height: fit-content;
+        border: 2px solid rgb(245, 201, 8);
       }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <img src="img/z5710175381129_7b0c5730a3067a4d1fda975ee6b7c23c.jpg" width="50px" alt="" />
-      <span>Dấu vết của mầm xanh</span>
+    <div class="bt logo">
+      <div class="tc">
+        <img href="./" src="img/z5710175381129_7b0c5730a3067a4d1fda975ee6b7c23c.jpg" width="8%" />
+        <span>Dấu vết của mầm xanh</span>
+      </div>
+    </div>
+    <div class="menu">
       <ul>
         <li>
-          <button><a href="./phim.html">Moving toon</a></button>
+          <a href="./phim.html">MOVING TOON</a>
         </li>
         <li>
-          <button><a href="./">Trang chủ</a></button>
+          <a href="./">TRANG CHỦ</a>
         </li>
         <li>
-          <button><a href="./sanPham.html">Boardgame</a></button>
-        </li>
-        <li>
-          <button><a href="./contact.html">Liên hệ</a></button>
+          <a href="./sanPham.html">BOARDGAME</a>
         </li>
       </ul>
     </div>
     <div class="hinh">
-      <img src="img/ảnh các nhân vật.jpg" alt="" />
-      <img src="img/ảnh đô và mi.jpg" alt="" />
-      <img src="img/z5710175380967_3e44795e29fa7ce2bf8355850601653a.jpg" alt="" />
-      <img src="img/z5710175398244_d88b14d2316eb3e4aa7eaf8823068fbb.jpg" alt="" />
-      <img src="img/z5710175384992_82ff2c26f1c4a45facbbdc2a9fbce623.jpg" alt="" />
+      <div class="hop">
+        <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="" direction="" scrollamount="3" scrolldelay="10" width="100%" vspace="5%">
+          <!-- <img src="img/ảnh các nhân vật.jpg" alt="" /> -->
+          <img src="img/ảnh đô và mi.jpg" alt="" />
+          <img src="img/z5710175380967_3e44795e29fa7ce2bf8355850601653a.jpg" alt="" />
+          <img src="img/z5710175398244_d88b14d2316eb3e4aa7eaf8823068fbb.jpg" alt="" />
+          <img src="img/z5710175384992_82ff2c26f1c4a45facbbdc2a9fbce623.jpg" alt="" />
+        </marquee>
+      </div>
     </div>
     <h1>Sản phẩm mới nhất</h1>
-    <div></div>
-    <hr />
-    <div class="logo">
-      <img src="img/z5710175381129_7b0c5730a3067a4d1fda975ee6b7c23c.jpg" width="50px" alt="" />
-      <span>Dấu vết của mầm xanh</span>
-      <h5 class="lienhe">
-        HOTLINE:
-        <span>SẢN PHẨM: </span> <br />
-        EMAIL:
-        <span>- BOARDGAME</span> <br />
-        ĐỊA CHỈ:
-        <span>- Moving toon</span>
-      </h5>
+    <div class="bt footer">
+      <div class="box">
+        <div class="khoi left" style="padding-bottom: 4%">
+          <div>
+            <img src="img/z5710175381129_7b0c5730a3067a4d1fda975ee6b7c23c.jpg" width="50px" alt="" />
+            <span>Dấu vết của mầm xanh</span>
+          </div>
+          <div class="lienhe" style="padding-top: 5px">
+            HOTLINE: 0933537206 <br />
+            EMAIL: <a href="mailto: dauvetcuamamxanh.com">dauvetcuamamxanh.com</a><br />
+            ĐỊA CHỈ: Số 18 đường Lê Thúc Hoạch, Phường Phú Thọ Hòa, Quận Tân Phú, Tp. Hồ Chí Minh
+          </div>
+        </div>
+        <div class="sanpham right" style="padding-right: 2%">
+          SẢN PHẨM:
+          <div style="padding-top: 2%" class="cac_san_pham">
+            Boardgame <br />
+            Moving Toon
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
