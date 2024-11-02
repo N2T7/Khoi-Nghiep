@@ -1,8 +1,9 @@
 body {
   margin: 0;
+  background-image: url("./img/nen.PNG");
 }
 .logo {
-  background-color: rgb(245, 201, 8);
+  background-color: grey;
   height: 7vh;
   color: #59191e;
   margin: 0;
@@ -17,7 +18,7 @@ body {
 }
 .menu {
   margin: 0;
-  background-color: #59191e;
+  background-color: white;
   height: 5vh;
   display: flex;
   align-items: center;
@@ -30,21 +31,21 @@ li {
   padding: 4rem;
 }
 .menu a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .footer {
-  background-color: #59191e;
+  background-color: white;
   position: absolute;
   bottom: 0;
   padding-top: 2%;
 }
 .footer span {
-  color: rgb(245, 201, 8);
+  color: black;
   margin-left: auto;
 }
 .lienhe {
-  color: grey;
+  color: black;
 }
 .box {
   display: grid;
