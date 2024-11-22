@@ -61,3 +61,8 @@ a {
 .active {
   background-color: #717171;
 }
+
+.slideshow-container img {
+  width: auto;
+  height: 380px;
+}

@@ -17,8 +17,9 @@ a {
   align-items: center;
   height: 25vh;
   width: 35vw;
-  background-color: #bb3d00;
-  border-radius: 8%;
+}
+.anh img {
+  width: 25vw;
 }
 .box2 {
   display: flex;
