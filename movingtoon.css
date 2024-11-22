@@ -1,6 +1,11 @@
 body {
   margin: 0;
   height: fit-content;
+  background-image: url("./img/nen.PNG");
+}
+.info_of_movie {
+  color: white;
+  text-align: center;
 }
 ul li {
   display: inline;
@@ -10,30 +15,6 @@ ul li {
 a {
   text-decoration: none;
   color: white;
-}
-.box1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25vh;
-  width: 35vw;
-  background-color: #bb3d00;
-  border-radius: 8%;
-}
-.box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25vh;
-  width: 35vw;
-  font-size: 115%;
-  color: #6cc015;
-  background-color: #dcffd7;
-}
-.box {
-  box-sizing: border-box;
-  flex: 1;
-  /* margin: 0 20vw; */
 }
 
 /* Basic slideshow styles */

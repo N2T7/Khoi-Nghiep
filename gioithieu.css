@@ -80,3 +80,6 @@ a {
 .active {
   background-color: #717171;
 }
+.info * {
+  padding: 10px;
+}
