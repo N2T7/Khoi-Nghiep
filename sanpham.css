@@ -2,10 +2,13 @@ body {
   margin: 0;
   height: fit-content;
 }
+.gioi_thieu {
+  text-align: center;
+}
 ul li {
   display: inline;
   list-style: none;
-  padding: 3vw;
+  padding: 1vw;
 }
 a {
   text-decoration: none;

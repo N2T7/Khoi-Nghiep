@@ -5,7 +5,7 @@ body {
 ul li {
   display: inline;
   list-style: none;
-  padding: 3vw;
+  padding: 1vw;
 }
 a {
   text-decoration: none;
@@ -20,16 +20,21 @@ a {
 }
 .anh img {
   width: 25vw;
+  border-radius: 10%;
 }
 .box2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 25vh;
-  width: 35vw;
+  width: 45vw;
   font-size: 115%;
   color: #6cc015;
   background-color: #dcffd7;
+  border-radius: 5%;
+}
+.box2 > div {
+  width: 85%;
 }
 .box {
   box-sizing: border-box;

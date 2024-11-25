@@ -15,7 +15,7 @@
       <div>
         <div style="display: flex; align-items: center; justify-content: space-between">
           <img src="./img/anhlogo.png" alt="" />
-          <a href="./muahang.html"><img src="./img/giohang.png" alt="" /></a>
+          <img src="./img/giohang.png" alt="" />
         </div>
       </div>
       <div style="color: white; background-color: #082020; display: flex; align-items: center; justify-content: space-between; flex-direction: row">
@@ -27,7 +27,7 @@
         <div style="flex: 1; margin: 0 auto">
           <div style="width: 100%; margin: 0 auto; text-align: center">
             <ul>
-              <li><a href="./">TRANG CHỦ</a></li>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
               <li><a href="./sanpham.html">SẢN PHẨM</a></li>
               <li><a href="./movingtoon.html">MOVING TOON</a></li>
               <li><a href="./gioithieu.html">GIỚI THIỆU</a></li>
@@ -36,6 +36,25 @@
         </div>
       </div>
     </header>
+    <main>
+      <marquee style="background-color: rgb(255, 46, 46);font-size: 200%;height: fit-content;margin:2px"onmouseover="this.stop();" onmouseout="this.start();" direction="left">ĐẶT HÀNG QUA HOTLINE: 0933537206</marquee>
+      <div class="gioi_thieu">
+        <img onclick="Hello()" id="mua_hang" src="./img/anh_game.jpg" alt="" width="20%">
+        <figure>
+          <figcaptionon click="Hello()" > <strong>BOARDGAME TRUY TÌM DẤU VẾT
+            CỦA MẦM XANH </strong><br> 295,000đ</figcaption>
+        </figure>
+      </div>
+    </main>
+    <script>
+      function Hello() {
+        return `
+          <div class="popup">
+            <h1>BOARDGAME TRUY TÌM DẤU VẾT CỦA MẦM XANH</h1>
+          </div>
+        `
+      }
+    </script>
     <!-- <main>
       <div class="pic_of_product" style="text-align: center">
         <figure>
