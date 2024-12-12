@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mua hàng</title>
+  <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+  <body>
+    <h1>Product Sales</h1>
+    <form id="data">
+      <input type="text" id="name" value="" required placeholder="Tên ..." /><br /><br />
+
+      <input type="text" id="phone" value="" required placeholder="Số điện thoại ..." /> <br />
+      <br />
+
+      <input type="text" id="address" value="" required placeholder="Địa chỉ ..." /> <br />
+      <br />
+
+      <input type="number" id="quantity" value="" min="1" required placeholder="Số lượng sản phẩm bạn muốn mua" /><br /><br />
+
+      <button id="button">Mua hàng</button>
+    </form>
+
+    <script type="module">
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDnlaQLyww-8x8bouHqedVnfw0ocH1xTu0",
+        authDomain: "cs-data-572d4.firebaseapp.com",
+        databaseURL: "https://cs-data-572d4-default-rtdb.firebaseio.com",
+        projectId: "cs-data-572d4",
+        storageBucket: "cs-data-572d4.firebasestorage.app",
+        messagingSenderId: "677651161944",
+        appId: "1:677651161944:web:4cac4589b8f7383b8d7b2d"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+
+      import {getDatabase, ref, child, get,set,update,remove} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+
+      const db = getDatabase();
+
+      let nameInp = document.getElementById('name');
+      let phoneInp = document.getElementById('phone');
+      let addressInp = document.getElementById('address');
+      let quantityInp = document.getElementById('quantity');
+
+      let AddBtn = document.getElementById('button');
+
+      function AddData()
+      {
+        console.log(1);
+        set(ref(db, 'KhachHang/' + phoneInp.value), {
+          Ten_khach_hang: nameInp.value,
+          Dia_chi: addressInp.value,
+          So_luong: Number(quantityInp.value),
+        }).then(() => {
+          alert("Mua hàng thành công");
+        }).catch((error)=>{
+          alert("Mua hàng thất bại");
+          console.log(error);
+        })
+      }
+
+      AddBtn.addEventListener('click', AddData);
+    </script>
+  </body>
+</body>
+</html>

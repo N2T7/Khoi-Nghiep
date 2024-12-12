@@ -86,3 +86,6 @@ a {
 .active {
   background-color: #717171;
 }
+.chatbot { 
+  position: absolute; top:0;left:0;
+ }
